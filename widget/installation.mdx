@@ -1,0 +1,72 @@
+---
+title: "Widget installation"
+description: "Add the ReleaseDock widget to your website or app"
+icon: "code"
+---
+
+## Basic installation
+
+Add this script tag to your site, just before the closing `</body>` tag:
+
+```html
+<script
+  src="https://app.releasedock.co/widget.js"
+  data-project="YOUR_API_KEY"
+  async
+></script>
+```
+
+Replace `YOUR_API_KEY` with the API key from **Settings > Widget** in your dashboard.
+
+That's it. The widget will appear as a floating launcher button in the corner of your site.
+
+## Framework examples
+
+<AccordionGroup>
+  <Accordion title="React / Next.js">
+    Add the script tag to your root layout or use a `useEffect` hook:
+
+    ```jsx
+    useEffect(() => {
+      const script = document.createElement("script");
+      script.src = "https://app.releasedock.co/widget.js";
+      script.setAttribute("data-project", "YOUR_API_KEY");
+      script.async = true;
+      document.body.appendChild(script);
+      return () => script.remove();
+    }, []);
+    ```
+  </Accordion>
+
+  <Accordion title="Vue">
+    Add to your `App.vue` mounted hook or in `index.html`:
+
+    ```html
+    <script
+      src="https://app.releasedock.co/widget.js"
+      data-project="YOUR_API_KEY"
+      async
+    ></script>
+    ```
+  </Accordion>
+
+  <Accordion title="Static HTML">
+    Paste the script tag directly into your HTML file before `</body>`:
+
+    ```html
+    <script
+      src="https://app.releasedock.co/widget.js"
+      data-project="YOUR_API_KEY"
+      async
+    ></script>
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Verifying installation
+
+Once installed, you should see a floating button in the bottom-right corner of your site (default position). Click it to open the changelog panel. If you've published at least one changelog, it will appear in the feed.
+
+<Tip>
+  The widget uses Shadow DOM, so it's completely isolated from your site's styles. No CSS conflicts.
+</Tip>

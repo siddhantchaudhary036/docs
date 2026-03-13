@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ReleaseDock",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563EB",
+    "light": "#3B82F6",
+    "dark": "#1D4ED8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -17,52 +17,30 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Features",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "features/changelogs",
+              "features/widget",
+              "features/surveys",
+              "features/subscribers",
+              "features/labels",
+              "features/analytics"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Widget",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Widget integration",
             "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "widget/installation",
+              "widget/customization"
             ]
           }
         ]
@@ -71,14 +49,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Dashboard",
+          "href": "https://app.releasedock.co/dashboard",
+          "icon": "gauge"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "GitHub",
+          "href": "https://github.com/siddhantchaudhary036",
+          "icon": "github"
         }
       ]
     }
@@ -91,32 +69,18 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@releasedock.co"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.releasedock.co/dashboard"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/siddhantchaudhary036"
     }
   }
 }

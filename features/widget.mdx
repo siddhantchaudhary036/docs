@@ -1,0 +1,42 @@
+---
+title: "Embeddable widget"
+description: "Add a 'What's New' panel to your app with a single script tag"
+icon: "window-restore"
+---
+
+The ReleaseDock widget is a floating "What's New" panel that lives inside your app. It shows your latest changelogs without users leaving your site.
+
+## Key features
+
+- Single script tag installation
+- Shadow DOM isolation — zero style conflicts with your site
+- Unread badge that highlights new updates
+- Customizable colors, position, and launcher style
+- Optional subscribe form for email notifications
+- Light, dark, and auto color schemes
+
+## How it works
+
+When a user visits your site, the widget loads your published changelogs from ReleaseDock. It tracks which entries the user has already seen and shows an unread count badge on the launcher button.
+
+Clicking the launcher opens a panel with your changelog feed. Each entry shows the title, date, labels, and a preview of the content.
+
+## Installation
+
+Add this script tag to your site, just before the closing `</body>` tag:
+
+```html
+<script
+  src="https://app.releasedock.co/widget.js"
+  data-project="YOUR_API_KEY"
+  async
+></script>
+```
+
+Replace `YOUR_API_KEY` with the API key from your project's **Settings > Widget** page.
+
+<Tip>
+  The widget is fully self-contained inside a Shadow DOM, so it won't interfere with your existing CSS or JavaScript.
+</Tip>
+
+For detailed customization options, see the [Widget customization](/widget/customization) guide.

@@ -1,0 +1,58 @@
+---
+title: "Surveys"
+description: "Collect user feedback with targeted in-app surveys"
+icon: "clipboard-question"
+---
+
+ReleaseDock includes a built-in survey system that lets you collect feedback directly from your users inside your app.
+
+## Question types
+
+| Type | Description |
+|---|---|
+| NPS | Net Promoter Score (0–10 scale) |
+| CSAT | Customer Satisfaction (emoji or star rating) |
+| CES | Customer Effort Score (configurable scale) |
+| PMF | Product-Market Fit ("How would you feel if you could no longer use this product?") |
+| Single choice | Pick one option from a list |
+| Multiple choice | Pick multiple options from a list |
+| Open text | Free-form text response |
+| Numeric scale | Custom numeric range |
+
+Each question can have a conditional follow-up question that appears based on the user's answer.
+
+## Targeting
+
+Control who sees your survey and when:
+
+- URL rules — show the survey only on specific pages (exact match, contains, starts with, or regex)
+- Device type — target desktop, mobile, or both
+- User properties — filter by custom key-value properties
+- Max responses — cap the total number of responses
+- Trigger delay — wait a set number of seconds before showing the survey
+- Frequency — show once, on every visit, or recurring (every N days)
+
+## Appearance
+
+Customize how the survey looks:
+
+- Primary color, background, text color
+- Border radius
+- Light, dark, or auto color scheme
+- Display format: slide-in bottom-right, slide-in bottom-left, or center modal
+- Custom submit button text
+
+## Survey lifecycle
+
+Surveys go through these statuses:
+
+| Status | Description |
+|---|---|
+| Draft | Not yet active. Edit freely. |
+| Active | Visible to targeted users. |
+| Paused | Temporarily hidden. Resume anytime. |
+| Closed | No longer collecting responses. |
+
+## Analytics
+
+View response analytics for each survey, including response counts, score distributions, and individual answers. Navigate to **Surveys > [Survey] > Analytics** in the dashboard.
